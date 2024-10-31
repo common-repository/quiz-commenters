@@ -1,0 +1,27 @@
+.quizcommenters label.answer {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 7px 6px 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background: #eee;
+}
+.quizcommenters label:hover {
+    background: #ccc;
+}
+.quizcommenters p.correct,
+.quizcommenters p.error {
+    font: inherit;
+    animation: .5s quizcommenters;
+}
+.quizcommenters p.correct {
+    color: green;
+    font-weight: bold;
+}
+.quizcommenters p.error {
+    color: red;
+}
+@keyframes quizcommenters {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
